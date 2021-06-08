@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&family=Roboto:wght@200;400;500;700;900&display=swap"
         rel="stylesheet" />
     <script src="https://kit.fontawesome.com/9e8fadb081.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css" />
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<!--Navigation-->
+    <!--Navigation-->
     <header>
         <nav-one class="desktop">
             <ul>
@@ -62,14 +62,154 @@
                 <li><a href="#">THE BRAND</a></li>
                 <li><a href="#">LOCAL STORES</a></li>
             </ul>
-                <div class="search-mobile-div-input">
+            <div class="search-mobile-div-input">
                 <input class="search-mobile-input" type="text" placeholder="search product ...">
                 <button class="btn-search-input-mobile">Search</button>
             </div>
         </nav-two>
-        </header>
+    </header>
 
-<script src="./index.js"></script>
+<!--Products-->
+
+    <div class="product-layout">
+        <div class="product">
+            <div class="product-id">1</div>
+            <div class="img-container">
+                <img class="image" src="./images/product-1-beach.jpg" alt="" />
+                <div data-action="ADD_TO_CART" class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <ul class="side-icons">
+                    <span><i class="fas fa-info-circle"></i></span>
+                    <span><i class="far fa-heart"></i></span>
+                </ul>
+            </div>
+            <div class="bottom">
+                <h1 class="product-name">Beach</h1>
+                <div class="price"><span>$</span><span class="product-price"> 50</span></div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-id">2</div>
+            <div class="img-container">
+                <img class="image" src="./images/product-2-salsa.jpg" alt="" />
+                <div data-action="ADD_TO_CART" class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <ul class="side-icons">
+                    <span><i class="fas fa-info-circle"></i></span>
+                    <span><i class="far fa-heart"></i></span>
+                </ul>
+            </div>
+            <div class="bottom">
+                <h1 class="product-name">Salsa</h1>
+                <div class="price"><span>$</span><span class="product-price"> 60</span></div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-id">3</div>
+            <div class="img-container">
+                <img class="image" src="./images/product-3-tango.jpg" alt="" />
+                <div data-action="ADD_TO_CART" class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <ul class="side-icons">
+                    <span><i class="fas fa-info-circle"></i></span>
+                    <span><i class="far fa-heart"></i></span>
+                </ul>
+            </div>
+            <div class="bottom">
+                <h1 class="product-name">Tango</h1>
+                <div class="price"><span>$</span><span class="product-price"> 70</span></div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-id">4</div>
+            <div class="img-container">
+                <img class="image" src="./images/product-4-laguna.jpg" alt="" />
+                <div data-action="ADD_TO_CART" class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <ul class="side-icons">
+                    <span><i class="fas fa-info-circle"></i></span>
+                    <span><i class="far fa-heart"></i></span>
+                </ul>
+            </div>
+            <div class="bottom">
+                <h1 class="product-name">Laguna</h1>
+                <div class="price"><span>$</span><span class="product-price"> 65</span></div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-id">5</div>
+            <div class="img-container">
+                <img class="image" src="./images/product-5-havana.jpg" alt="" />
+                <div data-action="ADD_TO_CART" class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <ul class="side-icons">
+                    <span><i class="fas fa-info-circle"></i></span>
+                    <span><i class="far fa-heart"></i></span>
+                </ul>
+            </div>
+            <div class="bottom">
+                <h1 class="product-name">Havana</h1>
+                <div class="price"><span>$</span><span class="product-price"> 25</span></div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-id">6</div>
+            <div class="img-container">
+                <img class="image" src="./images/product-6-malibu.jpg" alt="" />
+                <div data-action="ADD_TO_CART" class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <ul class="side-icons">
+                    <span><i class="fas fa-info-circle"></i></span>
+                    <span><i class="far fa-heart"></i></span>
+                </ul>
+            </div>
+            <div class="bottom">
+                <h1 class="product-name">Malibu</h1>
+                <div class="price"><span>$</span><span class="product-price"> 85</span></div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-id">7</div>
+            <div class="img-container">
+                <img class="image" src="./images/product-7-blanca.jpg" alt="" />
+                <div data-action="ADD_TO_CART" class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <ul class="side-icons">
+                    <span><i class="fas fa-info-circle"></i></span>
+                    <span><i class="far fa-heart"></i></span>
+                </ul>
+            </div>
+            <div class="bottom">
+                <h1 class="product-name">Blanca</h1>
+                <div class="price"><span>$</span><span class="product-price"> 90</span></div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-id">8</div>
+            <div class="img-container">
+                <img class="image" src="./images/product-8-carmen.jpg" alt="" />
+                <div data-action="ADD_TO_CART" class="addCart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <ul class="side-icons">
+                    <span><i class="fas fa-info-circle"></i></span>
+                    <span><i class="far fa-heart"></i></span>
+                </ul>
+            </div>
+            <div class="bottom">
+                <h1 class="product-name">Carmen</h1>
+                <div class="price"><span>$</span><span class="product-price"> 55</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>
