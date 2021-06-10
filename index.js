@@ -1,3 +1,5 @@
+/*Navigation*/
+
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector("nav-two.mobile");
 
@@ -6,6 +8,9 @@ hamburger.addEventListener("click", () => {
   nav.classList.toggle("open");
 });
 
+/*Navigation*/
+
+/*Modal*/
 
 let modalContainer = document.querySelectorAll(".modal-container");
 let modal = document.querySelectorAll(".modal");
@@ -30,3 +35,5 @@ for (let i = 0; i < buttonClose.length; i++) {
     setTimeout(() => modalContainer[i].classList.remove("open"), 500);
   });
 }
+
+/*Modal*/
