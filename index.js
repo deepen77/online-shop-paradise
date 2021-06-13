@@ -37,3 +37,47 @@ for (let i = 0; i < buttonClose.length; i++) {
 }
 
 /*Modal*/
+
+/*Branches*/
+
+const btnLondon = document.querySelector(".btn-london");
+const btnNewyork = document.querySelector(".btn-newyork");
+const btnParis = document.querySelector(".btn-paris");
+const mapLondon = document.getElementById("london");
+const mapNewyork = document.getElementById("newyork");
+const mapParis = document.getElementById("paris");
+
+btnLondon.addEventListener("click", () => {
+  mapLondon.style.transition = "2s";
+  btnNewyork.classList.remove("btn-active");
+  btnLondon.classList.add("btn-active");
+  btnParis.classList.remove("btn-active");
+  mapNewyork.style.display = "none";
+  mapLondon.style.display = "flex";
+  mapParis.style.display = "none";
+});
+
+btnNewyork.addEventListener("click", () => {
+  mapNewyork.style.transition = "2s";
+  btnNewyork.classList.add("btn-active");
+  btnLondon.classList.remove("btn-active");
+  btnParis.classList.remove("btn-active");
+  mapNewyork.style.display = "flex";
+  mapLondon.style.display = "none";
+  mapParis.style.display = "none";
+});
+
+btnParis.addEventListener("click", () => {
+  mapParis.style.transition = "2s";
+  btnNewyork.classList.remove("btn-active");
+  btnLondon.classList.remove("btn-active");
+  btnParis.classList.add("btn-active");
+  mapNewyork.style.display = "none";
+  mapLondon.style.display = "none";
+  mapParis.style.display = "flex";
+  mapParis.style.transition = "2s";
+});
+
+
+
+/*Branches*/

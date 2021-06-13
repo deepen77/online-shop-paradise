@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&family=Roboto:wght@200;400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9e8fadb081.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../styles/branches.css" />
+    <title>Products</title>
+</head>
+
+<body>
+    <!--Navigation-->
+    <header>
+        <nav-one class="desktop">
+            <ul>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a class="home" href="#">About</a></li>
+                <li class="cart">
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i> Cart<span class="counter-basket">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav-one>
+        <nav-two class="desktop">
+            <ul>
+                <li><a href="#"><span><b>PARADISE</b> SHOP</span></a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">THE BRAND</a></li>
+                <li><a href="#">LOCAL STORES</a></li>
+                <li><input class="search" type="text" placeholder="search product ..." class="search">
+                    <i class="fas fa-search"></i>
+                </li>
+            </ul>
+        </nav-two>
+        <nav-one class="mobile">
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <ul>
+                <li><a href="#"><i class="far fa-user"></i></a></li>
+                <li class="cart">
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i><span class="counter-basket">0</span>
+                    </a>
+                </li>
+                <li><i class="fas fa-search search-mobile"></i></li>
+            </ul>
+        </nav-one>
+        <nav-two class="mobile">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">THE BRAND</a></li>
+                <li><a href="#">LOCAL STORES</a></li>
+            </ul>
+            <div class="search-mobile-div-input">
+                <input class="search-mobile-input" type="text" placeholder="search product ...">
+                <button class="btn-search-input-mobile">Search</button>
+            </div>
+        </nav-two>
+    </header>
+
+
+    <section class="branches">
+        <div class="branch">
+            <h2 class="branch-city">LONDON</h2>
+            <h3 class="branch-street">180-182 REGENT STREET, LONDON, W1B 5BT</h3>
+            <p class="branch-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim omnis veritatis
+                quo incidunt aliquam error quibusdam vel necessitatibus voluptas! Dolorem ullam quasi eveniet velit eius
+                ab fugiat porro eum asperiores.</p>
+            <button class="branch-btn-details btn-london btn-active">VIEW DETAILS</button>
+        </div>
+        <div class="branch">
+            <h2 class="branch-city">NEW YORK</h2>
+            <h3 class="branch-street">109 COLUMBUS CIRCLE, NEW YORK, NY 10023</h3>
+            <p class="branch-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim omnis veritatis
+                quo incidunt aliquam error quibusdam vel necessitatibus voluptas! Dolorem ullam quasi eveniet velit eius
+                ab fugiat porro eum asperiores.</p>
+            <button class="branch-btn-details btn-newyork">VIEW DETAILS</button>
+        </div>
+        <div class="branch">
+            <h2 class="branch-city">PARIS</h2>
+            <h3 class="branch-street">2133 RUE SAINT-HONORE, 75001 PARIS</h3>
+            <p class="branch-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim omnis veritatis
+                quo incidunt aliquam error quibusdam vel necessitatibus voluptas! Dolorem ullam quasi eveniet velit eius
+                ab fugiat porro eum asperiores.</p>
+            <button class="branch-btn-details btn-paris">VIEW DETAILS</button>
+        </div>
+    </section>
+
+    <section class="maps">
+        <div class="map-container" id="london">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.040684901663!2d-0.1420051838305808!3d51.512469579635955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d5767c9015%3A0x1cf0ab0381c7fd45!2s180%20Regent%20St%2C%20Soho%2C%20London%20W1B%205TJ%2C%20UK!5e0!3m2!1sen!2sie!4v1615496231711!5m2!1sen!2sie"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="map-description">
+                <h2 class="map-city">LONDON</h2>
+                <h3 class="map-street">180-182 REGENT STREET, LONDON, W1B 5BT</h3>
+                <p class="map-description-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                    omnis veritatis
+                    quo incidunt aliquam error quibusdam vel necessitatibus voluptas! Dolorem ullam quasi eveniet velit
+                    eius
+                    ab fugiat porro eum asperiores.</p>
+                <div class="map-description-details">
+                    <div class="map-description-details-wrapper">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4 class="map-description-details-street">180-182 Regent Street, London, W1B 5BT</h4>
+
+                    </div>
+                    <div class="map-description-details-wrapper">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4 class="map-description-details-phone">0123-456-789</h4>
+                    </div>
+                    <div class="map-description-details-wrapper">
+                        <i class="fas fa-link"></i>
+                        <h4 class="map-description-details-link">www.yourwebsite.com</h4>
+                    </div>
+                    <div class="map-description-details-wrapper">
+                        <i class="far fa-envelope"></i>
+                        <h4 class="map-description-details-email">support@yourwebsite.com</h4>
+                    </div>
+                    <div class="map-description-details-wrapper">
+                        <i class="far fa-clock"></i>
+                        <h4 class="map-description-details-email">Monday-Friday: 9am to 6pm Saturday: 10am to 6pm
+                            Sunday:
+                            10am
+                            to 2pm</h4>
+                    </div>
+                </div>
+
+
+
+                <div class="map-social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-pinterest"></i>
+
+                </div>
+            </div>
+        </div>
+        <div class="map-container" id="newyork">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.714648587554!2d-73.98444854863436!3d40.768300442003905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f63cf10429%3A0x21ea18a2c52e7ca7!2s109%20Columbus%20Cir%2C%20New%20York%2C%20NY%2010019%2C%20USA!5e0!3m2!1sen!2sie!4v1614971871553!5m2!1sen!2sie"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="map-description">
+                <h2 class="map-city">NEW YORK</h2>
+                <h3 class="map-street">109 COLUMBUS CIRCLE, NEW YORK, NY 10023</h3>
+                <p class="map-description-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                    omnis veritatis
+                    quo incidunt aliquam error quibusdam vel necessitatibus voluptas! Dolorem ullam quasi eveniet velit
+                    eius
+                    ab fugiat porro eum asperiores.</p>
+                <div class="map-description-details">
+                    <div class="map-description-details-wrapper">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4 class="map-description-details-street">180-182 Regent Street, London, W1B 5BT</h4>
+
+                    </div>
+                    <div class="map-description-details-wrapper">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4 class="map-description-details-phone">0123-456-789</h4>
+                    </div>
+                    <div class="map-description-details-wrapper">
+                        <i class="fas fa-link"></i>
+                        <h4 class="map-description-details-link">www.yourwebsite.com</h4>
+                    </div>
+                    <div class="map-description-details-wrapper">
+                        <i class="far fa-envelope"></i>
+                        <h4 class="map-description-details-email">support@yourwebsite.com</h4>
+                    </div>
+                    <div class="map-description-details-wrapper">
+                        <i class="far fa-clock"></i>
+                        <h4 class="map-description-details-email">Monday-Friday: 9am to 6pm Saturday: 10am to 6pm
+                            Sunday:
+                            10am
+                            to 2pm</h4>
+                    </div>
+                </div>
+
+
+
+                <div class="map-social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-pinterest"></i>
+
+                </div>
+            </div>
+        </div>
+        <div class="map-container" id="paris">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6562761380574!2d2.330133451545841!3d48.864764508109815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e257ab8a9d9%3A0x60ac8c5b948a55ef!2sRue%20Saint-Honor%C3%A9%2C%20Paris%2C%20France!5e0!3m2!1sen!2sie!4v1614971969725!5m2!1sen!2sie"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="map-description">
+                <h2 class="map-city">PARIS</h2>
+                <h3 class="map-street">2133 RUE SAINT-HONORE, 75001 PARIS</h3>
+                <p class="map-description-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                    omnis veritatis
+                    quo incidunt aliquam error quibusdam vel necessitatibus voluptas! Dolorem ullam quasi eveniet velit
+                    eius
+                    ab fugiat porro eum asperiores.</p>
+                <div class="map-description-details">
+                    <div class="map-description-details-wrapper">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4 class="map-description-details-street">180-182 Regent Street, London, W1B 5BT</h4>
+
+                    </div>
+                    <div class="map-description-details-wrapper">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4 class="map-description-details-phone">0123-456-789</h4>
+                    </div>
+                    <div class="map-description-details-wrapper">
+                        <i class="fas fa-link"></i>
+                        <h4 class="map-description-details-link">www.yourwebsite.com</h4>
+                    </div>
+                    <div class="map-description-details-wrapper">
+                        <i class="far fa-envelope"></i>
+                        <h4 class="map-description-details-email">support@yourwebsite.com</h4>
+                    </div>
+                    <div class="map-description-details-wrapper">
+                        <i class="far fa-clock"></i>
+                        <h4 class="map-description-details-email">Monday-Friday: 9am to 6pm Saturday: 10am to 6pm
+                            Sunday:
+                            10am
+                            to 2pm</h4>
+                    </div>
+                </div>
+
+
+
+                <div class="map-social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-pinterest"></i>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Facility -->
+    <section class="facility section" id="facility">
+        <div class="facility-contianer container">
+            <div class="facility-box">
+                <div class="facility-icon">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <p>FREE SHIPPING WORLD WIDE</p>
+            </div>
+
+            <div class="facility-box">
+                <div class="facility-icon">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <p>100% MONEY BACK GUARANTEE</p>
+            </div>
+
+            <div class="facility-box">
+                <div class="facility-icon">
+                    <i class="far fa-credit-card"></i>
+                </div>
+                <p>MANY PAYMENT GATWAYS</p>
+            </div>
+
+            <div class="facility-box">
+                <div class="facility-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <p>24/7 ONLINE SUPPORT</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer" class="section footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-center">
+                    <h3>EXTRAS</h3>
+                    <a href="#">Brands</a>
+                    <a href="#">Gift Certificates</a>
+                    <a href="#">Affiliate</a>
+                    <a href="#">Specials</a>
+                    <a href="#">Site Map</a>
+                </div>
+                <div class="footer-center">
+                    <h3>INFORMATION</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Site Map</a>
+                </div>
+                <div class="footer-center">
+                    <h3>MY ACCOUNT</h3>
+                    <a href="#">My Account</a>
+                    <a href="#">Order History</a>
+                    <a href="#">Wish List</a>
+                    <a href="#">blogletter</a>
+                    <a href="#">Returns</a>
+                </div>
+                <div class="footer-center">
+                    <h3>CONTACT US</h3>
+                    <div>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        7, 6 Bridge Street, USA
+                    </div>
+                    <div>
+                        <span>
+                            <i class="far fa-envelope"></i>
+                        </span>
+                        company@email.com
+                    </div>
+                    <div>
+                        <span>
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        123-456-989
+                    </div>
+                    <div>
+                        <span>
+                            <i class="far fa-paper-plane"></i>
+                        </span>
+                        New York, USA
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="../index.js"></script>
+</body>
+
+</html>
