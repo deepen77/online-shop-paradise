@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&family=Roboto:wght@200;400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9e8fadb081.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../styles/register.css" />
+    <title>Products</title>
+</head>
+
+<body>
+    <!--Navigation-->
+    <header>
+        <nav-one class="desktop">
+            <ul>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a class="home" href="#">About</a></li>
+                <li class="cart">
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i> Cart<span class="counter-basket">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav-one>
+        <nav-two class="desktop">
+            <ul>
+                <li><a href="#"><span><b>PARADISE</b> SHOP</span></a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">THE BRAND</a></li>
+                <li><a href="#">LOCAL STORES</a></li>
+                <li><input class="search" type="text" placeholder="search product ..." class="search">
+                    <i class="fas fa-search"></i>
+                </li>
+            </ul>
+        </nav-two>
+        <nav-one class="mobile">
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <ul>
+                <li><a href="#"><i class="far fa-user"></i></a></li>
+                <li class="cart">
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i><span class="counter-basket">0</span>
+                    </a>
+                </li>
+                <li><i class="fas fa-search search-mobile"></i></li>
+            </ul>
+        </nav-one>
+        <nav-two class="mobile">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">THE BRAND</a></li>
+                <li><a href="#">LOCAL STORES</a></li>
+            </ul>
+            <div class="search-mobile-div-input">
+                <input class="search-mobile-input" type="text" placeholder="search product ...">
+                <button class="btn-search-input-mobile">Search</button>
+            </div>
+        </nav-two>
+    </header>
+
+<section class="registration">
+    <form id="formLogin" class="formLogin">
+        <div class="signIn">
+            <h3>SIGN IN</h3>
+
+            <input class="signInEmail" placeholder="Your Email..." id="emailLogin">
+            <input type="password" class="signInPassword" placeholder="Your password..." id="passwordLogin">
+            <div class="signInBtn">
+                <button class="sign-in">SIGN IN</button>
+                <p class="forgot">Forgot your Password <i class="fas fa-arrow-right"></i></p>
+            </div>
+        </div>
+
+    </form>
+    <form id="form" class="form">
+        <div class="register">
+            <h3>REGISTER</h3>
+            <div class="form-control">
+                <input class="registerEmail" placeholder="Your Email..." id="email" />
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <input type="password" class="registerPassword" placeholder="Your password..." id="password" />
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <input type="password" class="registerConfirmPass" placeholder="Confirm password..." id="repeat">
+                <small>Error message</small>
+            </div>
+            <div class="check-box">
+                <input type="checkbox" id="subscription" name="" value="">
+                <label for="">Sign up for exclusive updates, discounts, new arrivals, contests, and more! </label>
+            </div>
+            <div class="registerBtn">
+                <button class="create-account">CREATE ACCOUNT</button>
+                <p class="privacy">By clicking 'Create Account', you<br>agree to our<span class="policy"> Privacy Policy
+                        <i class="fas fa-arrow-right"></i></span></p>
+            </div>
+        </div>
+    </form>
+
+
+</section>
+
+
+    
+    <!-- Facility -->
+    <section class="facility section" id="facility">
+        <div class="facility-contianer container">
+            <div class="facility-box">
+                <div class="facility-icon">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <p>FREE SHIPPING WORLD WIDE</p>
+            </div>
+
+            <div class="facility-box">
+                <div class="facility-icon">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <p>100% MONEY BACK GUARANTEE</p>
+            </div>
+
+            <div class="facility-box">
+                <div class="facility-icon">
+                    <i class="far fa-credit-card"></i>
+                </div>
+                <p>MANY PAYMENT GATWAYS</p>
+            </div>
+
+            <div class="facility-box">
+                <div class="facility-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <p>24/7 ONLINE SUPPORT</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer" class="section footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-center">
+                    <h3>EXTRAS</h3>
+                    <a href="#">Brands</a>
+                    <a href="#">Gift Certificates</a>
+                    <a href="#">Affiliate</a>
+                    <a href="#">Specials</a>
+                    <a href="#">Site Map</a>
+                </div>
+                <div class="footer-center">
+                    <h3>INFORMATION</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Site Map</a>
+                </div>
+                <div class="footer-center">
+                    <h3>MY ACCOUNT</h3>
+                    <a href="#">My Account</a>
+                    <a href="#">Order History</a>
+                    <a href="#">Wish List</a>
+                    <a href="#">blogletter</a>
+                    <a href="#">Returns</a>
+                </div>
+                <div class="footer-center">
+                    <h3>CONTACT US</h3>
+                    <div>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        7, 6 Bridge Street, USA
+                    </div>
+                    <div>
+                        <span>
+                            <i class="far fa-envelope"></i>
+                        </span>
+                        company@email.com
+                    </div>
+                    <div>
+                        <span>
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        123-456-989
+                    </div>
+                    <div>
+                        <span>
+                            <i class="far fa-paper-plane"></i>
+                        </span>
+                        New York, USA
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="../index.js"></script>
+</body>
+
+</html>
