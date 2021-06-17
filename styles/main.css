@@ -115,6 +115,10 @@
   .banner img {
   width: 50rem;
 }
+
+.glide:hover .glide__arrow {
+  visibility: hidden;
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -142,8 +146,8 @@
   margin-bottom: 1rem;
 }
  .banner img {
-  width: 13rem;
-  
+  /* width: 13rem; */
+  top:30rem;
 }
 }
 

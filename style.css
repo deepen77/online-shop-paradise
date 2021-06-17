@@ -708,7 +708,7 @@ nav-two ul li:hover {
 .footer {
   background-color: #222;
   padding: 6rem 1rem;
-  line-height: 3rem;
+  line-height: 1.5rem;
 }
 
 
@@ -720,6 +720,7 @@ nav-two ul li:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   color: #fff;
+  padding: 0 3rem 0 3rem;
 }
 
 .footer-center a:link,
@@ -756,6 +757,11 @@ nav-two ul li:hover {
   .footer-container {
     grid-template-columns: 1fr;
     row-gap: 2rem;
+    padding: 0;
+  }
+  .footer .container {
+    padding: 0;
+    margin: 0 2rem;
   }
 }
 

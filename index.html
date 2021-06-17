@@ -9,7 +9,15 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&family=Roboto:wght@200;400;500;700;900&display=swap"
         rel="stylesheet" />
     <script src="https://kit.fontawesome.com/9e8fadb081.js" crossorigin="anonymous"></script>
+
+    <!-- Glidejs StyleSheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>Products</title>
 </head>
 
@@ -69,498 +77,212 @@
         </nav-two>
     </header>
 
-<!--Products-->
+    <!-- Main -->
+    <main>
+        <!-- home-page-main-slider -->
+        <section class="home-page-main-slider">
+            <div class="glide glide1" id="glide1">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides glide__home-page-main-slider">
 
-    <div class="product-layout">
-        <div class="product">
-            <div class="product-id">1</div>
-            <div class="img-container">
-                <img class="image" src="./images/product-1-beach.jpg" alt="Beach" />
-                <div data-action="ADD_TO_CART" class="addCart">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <ul class="side-icons">
-                    <span><i class="fas fa-info-circle"></i></span>
-                    <span><i class="far fa-heart"></i></span>
-                </ul>
-            </div>
-            <div class="bottom">
-                <h1 class="product-name">Beach</h1>
-                <div class="price"><span>$</span><span class="product-price"> 50</span></div>
-            </div>
-            <div class="modal-container">
-                <div class="modal">
-                    <button class="btn-close"><i class="far fa-times-circle"></i></button>
-                    <div class="modal-pictures">
-                        <img src="./images/product-1-beach.jpg" alt="Beach">
-                    </div>
-                    <div class="modal-details">
-                        <div class="modal-details-title">Beach</div>
-                        <div class="modal-details-review-share">
-                            <div class="modal-details-reviews">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                3 Review(s)</div>
-                            <div class="modal-details-add_review">Add a Review</div>
-                            <div class="modal-details-share">Share:
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-google-plus-g"></i>
-                                <i class="fab fa-pinterest-p"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="far fa-envelope"></i>
+                        <li class="glide__slide">
+                            <div class="banner">
+                                <div class="banner-content">
+                                    <span>New Inspiration 2021</span>
+                                    <h1>TIMELESS PERFUMES YOU NEED!</h1>
+                                    <h3>Trending from women style collection</h3>
+                                    <div class="button-container">
+                                        <a href="#">shop now</a>
+                                    </div>
+                                </div>
+                                <img src="./images/main-page-slider1.png" alt="">
+                        </li>
+
+                        <li class="glide__slide">
+                            <div class="banner banner1">
+                                <div class="banner-content">
+                                    <span>New Inspiration 2021</span>
+                                    <h1>CHECK OUR OFFER!</h1>
+                                    <h3>Trending from women style collection</h3>
+                                    <div class="button-container">
+                                        <a href="#">shop now</a>
+                                    </div>
+                                </div>
+                                <img src="./images/main-page-slider2.png" alt="">
                             </div>
-                        </div>
-                        <div class="modal-details-price">$ 50</div>
-                        <div class="modal-details-availability">AVAILABILITY : In stock</div>
-                        <div class="modal-details-product_code">PRODUCT CODE: #776890</div>
-                        <div class="modal-details-tags">TAGS: Classic, Casual</div>
-                        <div class="modal-details-description">Perfect if you find you’re a lover of both fancy florals
-                            and mouth-watering sweet gourmands, this scent toes the line between both fragrance
-                            families!</div>
-                        <ul class="modal-details-description-points">
-                            <li>Eau de Parfum for her</li>
-                            <li>Floral and deliciously sweet in equal measures </li>
-                            <li>Best-selling scent</li>
-                            <li>Free shipping with 4 days delivery</li>
-                        </ul>
-                        <a data-action="ADD_TO_CART_IN_MODAL" class="add-cart add-cart-modal" href="#"><i
-                                class="fas fa-shopping-cart"></i>Add Cart</a>
+                        </li>
+
+                        <li class="glide__slide">
+                            <div class="banner">
+                                <div class="banner-content">
+                                    <span>New Inspiration 2021</span>
+                                    <h1>ENJOY SHOPPING!</h1>
+                                    <h3>Trending from women style collection</h3>
+                                    <div class="button-container">
+                                        <a href="#">shop now</a>
+                                    </div>
+                                </div>
+                                <img src="./images/main-page-slider3.png" alt="">
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- Arrows -->
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                            class="fas fa-arrow-left"></i></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                            class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Products -->
+        <section class="section" id="shop">
+            <div class="title-container">
+                <div class="section-titles">
+                    <div class="section-title active" data-id="latest">
+                        <span class="dot"></span>
+                        <h1 class="primary-title">Our Awards</h1>
                     </div>
                 </div>
             </div>
+
+        </section>
+
+        <div class="section brands container">
+            <div class="glide" id="glide2">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="./images/award1.jpg" alt="">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./images/award2.jpg" alt="">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./images/award3.jpg" alt="">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./images/award4.jpg" alt="">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./images/award5.jpg" cla alt="">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./images/award6.jpg" alt="">
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
         </div>
-        <div class="product">
-            <div class="product-id">2</div>
-            <div class="img-container">
-                <img class="image" src="./images/product-2-salsa.jpg" alt="Salsa" />
-                <div data-action="ADD_TO_CART" class="addCart">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <ul class="side-icons">
-                    <span><i class="fas fa-info-circle"></i></span>
-                    <span><i class="far fa-heart"></i></span>
-                </ul>
-            </div>
-            <div class="bottom">
-                <h1 class="product-name">Salsa</h1>
-                <div class="price"><span>$</span><span class="product-price"> 60</span></div>
-            </div>
-            <div class="modal-container">
-                <div class="modal">
-                    <button class="btn-close"><i class="far fa-times-circle"></i></button>
-                    <div class="modal-pictures">
-                        <img src="./images/product-2-salsa.jpg" alt="Salsa">
+
+        <!-- blog -->
+        <section class="section blog" id="blog">
+            <div class="title-container">
+                <div class="section-titles">
+                    <div class="section-title active">
+                        <span class="dot"></span>
+                        <h1 class="primary-title">Latest News</h1>
                     </div>
-                    <div class="modal-details">
-                        <div class="modal-details-title">Salsa</div>
-                        <div class="modal-details-review-share">
-                            <div class="modal-details-reviews">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                3 Review(s)</div>
-                            <div class="modal-details-add_review">Add a Review</div>
-                            <div class="modal-details-share">Share:
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-google-plus-g"></i>
-                                <i class="fab fa-pinterest-p"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="far fa-envelope"></i>
-                            </div>
-                        </div>
-                        <div class="modal-details-price">$ 60</div>
-                        <div class="modal-details-availability">AVAILABILITY : In stock</div>
-                        <div class="modal-details-product_code">PRODUCT CODE: #776892</div>
-                        <div class="modal-details-tags">TAGS: Classic, Casual</div>
-                        <div class="modal-details-description">Perfect if you find you’re a lover of both fancy florals
-                            and mouth-watering sweet gourmands, this scent toes the line between both fragrance
-                            families!</div>
-                        <ul class="modal-details-description-points">
-                            <li>Eau de Parfum for her</li>
-                            <li>Floral and deliciously sweet in equal measures </li>
-                            <li>Best-selling scent</li>
-                            <li>Free shipping with 4 days delivery</li>
+                </div>
+            </div>
+
+            <div class="blog-container container">
+                <div class="glide" id="glide3">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="blog-card">
+                                    <div class="card-header">
+                                        <img src="./images/blog1.jpg" alt="">
+                                    </div>
+                                    <div class="card-footer">
+                                        <h3>How to test perfume properly</h3>
+                                        <span>By Admin</span>
+                                        <p>You must give your perfume test more than one sniff. When you first spray it,
+                                            you’ll start to get an impression of the top notes, but to really appreciate
+                                            how the fragrance develops you need to give it time</p>
+                                        <a href="#"><button>Read More</button></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="blog-card">
+                                    <div class="card-header">
+                                        <img src="./images/blog2.jpg" alt="">
+                                    </div>
+                                    <div class="card-footer">
+                                        <h3>Everything You Need To Know About Perfume Oil Concentartion</h3>
+                                        <span>By Admin</span>
+                                        <p>Perfume oil concentration is the amount of oil present in a perfume. The
+                                            level will determine which category the fragrance falls into, plus it will
+                                            also play a part in how strong or subtle the scent will be, its sillage (the
+                                            trail it leaves when worn on the skin) and potentially how long it lasts.
+                                        </p>
+                                        <a href="#"><button>Read More</button></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="blog-card">
+                                    <div class="card-header">
+                                        <img src="./images/blog3.jpg" alt="">
+                                    </div>
+                                    <div class="card-footer">
+                                        <h3>What Are Body Mists</h3>
+                                        <span>By Admin</span>
+                                        <p>To put it simply, a body scent is a very light, soft version of a fragrance.
+                                            It has a much lower concentration than an Eau de Toilette or Eau de Parfum,
+                                            making them great for everyday wear</p>
+                                        <a href="#"><button>Read More</button></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="blog-card">
+                                    <div class="card-header">
+                                        <img src="./images/blog4.jpg" alt="">
+                                    </div>
+                                    <div class="card-footer">
+                                        <h3>Do You Remember Your First Fragrance?</h3>
+                                        <span>By Admin</span>
+                                        <p>If you’re a lover of perfume, we’re sure you’ll never forget your first
+                                            fragrance. From feeling oh-so-grown up when wearing it to school or it
+                                            triggering memories of a special Christmas where it was wrapped up under the
+                                            tree, everyone will have their own reason as to why it holds a place in
+                                            their heart.</p>
+                                        <a href="#"><button>Read More</button></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="blog-card">
+                                    <div class="card-header">
+                                        <img src="./images/blog5.jpg" alt="">
+                                    </div>
+                                    <div class="card-footer">
+                                        <h3>How To Upcycle Your Perfume Bottle</h3>
+                                        <span>By Admin</span>
+                                        <p>Who loves an aesthetically pleasing perfume bottle? We certainly do here at
+                                            The Paradise Shop!</p>
+                                        <a href="#"><button>Read More</button></a>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <a data-action="ADD_TO_CART_IN_MODAL" class="add-cart add-cart-modal" href="#"><i
-                                class="fas fa-shopping-cart"></i>Add Cart</a>
                     </div>
                 </div>
             </div>
-            </div>
-        <div class="product">
-            <div class="product-id">3</div>
-            <div class="img-container">
-                <img class="image" src="./images/product-3-tango.jpg" alt="Tango" />
-                <div data-action="ADD_TO_CART" class="addCart">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <ul class="side-icons">
-                    <span><i class="fas fa-info-circle"></i></span>
-                    <span><i class="far fa-heart"></i></span>
-                </ul>
-            </div>
-            <div class="bottom">
-                <h1 class="product-name">Tango</h1>
-                <div class="price"><span>$</span><span class="product-price"> 70</span></div>
-            </div>
-            <div class="modal-container">
-                <div class="modal">
-                    <button class="btn-close"><i class="far fa-times-circle"></i></button>
-                    <div class="modal-pictures">
-                        <img src="./images/product-3-tango.jpg" alt="Tango">
-                    </div>
-                    <div class="modal-details">
-                        <div class="modal-details-title">Tango</div>
-                        <div class="modal-details-review-share">
-                            <div class="modal-details-reviews">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                3 Review(s)</div>
-                            <div class="modal-details-add_review">Add a Review</div>
-                            <div class="modal-details-share">Share:
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-google-plus-g"></i>
-                                <i class="fab fa-pinterest-p"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="far fa-envelope"></i>
-                            </div>
-                        </div>
-                        <div class="modal-details-price">$ 70</div>
-                        <div class="modal-details-availability">AVAILABILITY : In stock</div>
-                        <div class="modal-details-product_code">PRODUCT CODE: #776893</div>
-                        <div class="modal-details-tags">TAGS: Classic, Casual</div>
-                        <div class="modal-details-description">Perfect if you find you’re a lover of both fancy florals
-                            and mouth-watering sweet gourmands, this scent toes the line between both fragrance
-                            families!</div>
-                        <ul class="modal-details-description-points">
-                            <li>Eau de Parfum for her</li>
-                            <li>Floral and deliciously sweet in equal measures </li>
-                            <li>Best-selling scent</li>
-                            <li>Free shipping with 4 days delivery</li>
-                        </ul>
-                        <a data-action="ADD_TO_CART_IN_MODAL" class="add-cart add-cart-modal" href="#"><i
-                                class="fas fa-shopping-cart"></i>Add Cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product-id">4</div>
-            <div class="img-container">
-                <img class="image" src="./images/product-4-laguna.jpg" alt="Laguna" />
-                <div data-action="ADD_TO_CART" class="addCart">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <ul class="side-icons">
-                    <span><i class="fas fa-info-circle"></i></span>
-                    <span><i class="far fa-heart"></i></span>
-                </ul>
-            </div>
-            <div class="bottom">
-                <h1 class="product-name">Laguna</h1>
-                <div class="price"><span>$</span><span class="product-price"> 65</span></div>
-            </div>
-            <div class="modal-container">
-                <div class="modal">
-                    <button class="btn-close"><i class="far fa-times-circle"></i></button>
-                    <div class="modal-pictures">
-                        <img src="./images/product-4-laguna.jpg" alt="Laguna">
-                    </div>
-                    <div class="modal-details">
-                        <div class="modal-details-title">Laguna</div>
-                        <div class="modal-details-review-share">
-                            <div class="modal-details-reviews">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                3 Review(s)</div>
-                            <div class="modal-details-add_review">Add a Review</div>
-                            <div class="modal-details-share">Share:
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-google-plus-g"></i>
-                                <i class="fab fa-pinterest-p"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="far fa-envelope"></i>
-                            </div>
-                        </div>
-                        <div class="modal-details-price">$ 65</div>
-                        <div class="modal-details-availability">AVAILABILITY : In stock</div>
-                        <div class="modal-details-product_code">PRODUCT CODE: #776894</div>
-                        <div class="modal-details-tags">TAGS: Classic, Casual</div>
-                        <div class="modal-details-description">Perfect if you find you’re a lover of both fancy florals
-                            and mouth-watering sweet gourmands, this scent toes the line between both fragrance
-                            families!</div>
-                        <ul class="modal-details-description-points">
-                            <li>Eau de Parfum for her</li>
-                            <li>Floral and deliciously sweet in equal measures </li>
-                            <li>Best-selling scent</li>
-                            <li>Free shipping with 4 days delivery</li>
-                        </ul>
-                        <a data-action="ADD_TO_CART_IN_MODAL" class="add-cart add-cart-modal" href="#"><i
-                                class="fas fa-shopping-cart"></i>Add Cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product-id">5</div>
-            <div class="img-container">
-                <img class="image" src="./images/product-5-havana.jpg" alt="Havana" />
-                <div data-action="ADD_TO_CART" class="addCart">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <ul class="side-icons">
-                    <span><i class="fas fa-info-circle"></i></span>
-                    <span><i class="far fa-heart"></i></span>
-                </ul>
-            </div>
-            <div class="bottom">
-                <h1 class="product-name">Havana</h1>
-                <div class="price"><span>$</span><span class="product-price"> 25</span></div>
-            </div>
-            <div class="modal-container">
-                <div class="modal">
-                    <button class="btn-close"><i class="far fa-times-circle"></i></button>
-                    <div class="modal-pictures">
-                        <img src="./images/product-5-havana.jpg" alt="Havana">
-                    </div>
-                    <div class="modal-details">
-                        <div class="modal-details-title">Havana</div>
-                        <div class="modal-details-review-share">
-                            <div class="modal-details-reviews">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                3 Review(s)</div>
-                            <div class="modal-details-add_review">Add a Review</div>
-                            <div class="modal-details-share">Share:
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-google-plus-g"></i>
-                                <i class="fab fa-pinterest-p"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="far fa-envelope"></i>
-                            </div>
-                        </div>
-                        <div class="modal-details-price">$ 25</div>
-                        <div class="modal-details-availability">AVAILABILITY : In stock</div>
-                        <div class="modal-details-product_code">PRODUCT CODE: #776895</div>
-                        <div class="modal-details-tags">TAGS: Classic, Casual</div>
-                        <div class="modal-details-description">Perfect if you find you’re a lover of both fancy florals
-                            and mouth-watering sweet gourmands, this scent toes the line between both fragrance
-                            families!</div>
-                        <ul class="modal-details-description-points">
-                            <li>Eau de Parfum for her</li>
-                            <li>Floral and deliciously sweet in equal measures </li>
-                            <li>Best-selling scent</li>
-                            <li>Free shipping with 4 days delivery</li>
-                        </ul>
-                        <a data-action="ADD_TO_CART_IN_MODAL" class="add-cart add-cart-modal" href="#"><i
-                                class="fas fa-shopping-cart"></i>Add Cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product-id">6</div>
-            <div class="img-container">
-                <img class="image" src="./images/product-6-malibu.jpg" alt="Malibu" />
-                <div data-action="ADD_TO_CART" class="addCart">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <ul class="side-icons">
-                    <span><i class="fas fa-info-circle"></i></span>
-                    <span><i class="far fa-heart"></i></span>
-                </ul>
-            </div>
-            <div class="bottom">
-                <h1 class="product-name">Malibu</h1>
-                <div class="price"><span>$</span><span class="product-price"> 85</span></div>
-            </div>
-            <div class="modal-container">
-                <div class="modal">
-                    <button class="btn-close"><i class="far fa-times-circle"></i></button>
-                    <div class="modal-pictures">
-                        <img src="./images/product-6-malibu.jpg" alt="Malibu">
-                    </div>
-                    <div class="modal-details">
-                        <div class="modal-details-title">Malibu</div>
-                        <div class="modal-details-review-share">
-                            <div class="modal-details-reviews">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                3 Review(s)</div>
-                            <div class="modal-details-add_review">Add a Review</div>
-                            <div class="modal-details-share">Share:
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-google-plus-g"></i>
-                                <i class="fab fa-pinterest-p"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="far fa-envelope"></i>
-                            </div>
-                        </div>
-                        <div class="modal-details-price">$ 85</div>
-                        <div class="modal-details-availability">AVAILABILITY : In stock</div>
-                        <div class="modal-details-product_code">PRODUCT CODE: #776896</div>
-                        <div class="modal-details-tags">TAGS: Classic, Casual</div>
-                        <div class="modal-details-description">Perfect if you find you’re a lover of both fancy florals
-                            and mouth-watering sweet gourmands, this scent toes the line between both fragrance
-                            families!</div>
-                        <ul class="modal-details-description-points">
-                            <li>Eau de Parfum for her</li>
-                            <li>Floral and deliciously sweet in equal measures </li>
-                            <li>Best-selling scent</li>
-                            <li>Free shipping with 4 days delivery</li>
-                        </ul>
-                        <a data-action="ADD_TO_CART_IN_MODAL" class="add-cart add-cart-modal" href="#"><i
-                                class="fas fa-shopping-cart"></i>Add Cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product-id">7</div>
-            <div class="img-container">
-                <img class="image" src="./images/product-7-blanca.jpg" alt="Blanca" />
-                <div data-action="ADD_TO_CART" class="addCart">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <ul class="side-icons">
-                    <span><i class="fas fa-info-circle"></i></span>
-                    <span><i class="far fa-heart"></i></span>
-                </ul>
-            </div>
-            <div class="bottom">
-                <h1 class="product-name">Blanca</h1>
-                <div class="price"><span>$</span><span class="product-price"> 90</span></div>
-            </div>
-            <div class="modal-container">
-                <div class="modal">
-                    <button class="btn-close"><i class="far fa-times-circle"></i></button>
-                    <div class="modal-pictures">
-                        <img src="./images/product-7-blanca.jpg" alt="Blanca">
-                    </div>
-                    <div class="modal-details">
-                        <div class="modal-details-title">Blanca</div>
-                        <div class="modal-details-review-share">
-                            <div class="modal-details-reviews">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                3 Review(s)</div>
-                            <div class="modal-details-add_review">Add a Review</div>
-                            <div class="modal-details-share">Share:
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-google-plus-g"></i>
-                                <i class="fab fa-pinterest-p"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="far fa-envelope"></i>
-                            </div>
-                        </div>
-                        <div class="modal-details-price">$ 90</div>
-                        <div class="modal-details-availability">AVAILABILITY : In stock</div>
-                        <div class="modal-details-product_code">PRODUCT CODE: #776897</div>
-                        <div class="modal-details-tags">TAGS: Classic, Casual</div>
-                        <div class="modal-details-description">Perfect if you find you’re a lover of both fancy florals
-                            and mouth-watering sweet gourmands, this scent toes the line between both fragrance
-                            families!</div>
-                        <ul class="modal-details-description-points">
-                            <li>Eau de Parfum for her</li>
-                            <li>Floral and deliciously sweet in equal measures </li>
-                            <li>Best-selling scent</li>
-                            <li>Free shipping with 4 days delivery</li>
-                        </ul>
-                        <a data-action="ADD_TO_CART_IN_MODAL" class="add-cart add-cart-modal" href="#"><i
-                                class="fas fa-shopping-cart"></i>Add Cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product-id">8</div>
-            <div class="img-container">
-                <img class="image" src="./images/product-8-carmen.jpg" alt="Carmen" />
-                <div data-action="ADD_TO_CART" class="addCart">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <ul class="side-icons">
-                    <span><i class="fas fa-info-circle"></i></span>
-                    <span><i class="far fa-heart"></i></span>
-                </ul>
-            </div>
-            <div class="bottom">
-                <h1 class="product-name">Carmen</h1>
-                <div class="price"><span>$</span><span class="product-price"> 55</span></div>
-            </div>
-            <div class="modal-container">
-                <div class="modal">
-                    <button class="btn-close"><i class="far fa-times-circle"></i></button>
-                    <div class="modal-pictures">
-                        <img src="./images/product-8-carmen.jpg" alt="Carmen">
-                    </div>
-                    <div class="modal-details">
-                        <div class="modal-details-title">Carmen</div>
-                        <div class="modal-details-review-share">
-                            <div class="modal-details-reviews">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                3 Review(s)</div>
-                            <div class="modal-details-add_review">Add a Review</div>
-                            <div class="modal-details-share">Share:
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-google-plus-g"></i>
-                                <i class="fab fa-pinterest-p"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="far fa-envelope"></i>
-                            </div>
-                        </div>
-                        <div class="modal-details-price">$ 55</div>
-                        <div class="modal-details-availability">AVAILABILITY : In stock</div>
-                        <div class="modal-details-product_code">PRODUCT CODE: #776898</div>
-                        <div class="modal-details-tags">TAGS: Classic, Casual</div>
-                        <div class="modal-details-description">Perfect if you find you’re a lover of both fancy florals
-                            and mouth-watering sweet gourmands, this scent toes the line between both fragrance
-                            families!</div>
-                        <ul class="modal-details-description-points">
-                            <li>Eau de Parfum for her</li>
-                            <li>Floral and deliciously sweet in equal measures </li>
-                            <li>Best-selling scent</li>
-                            <li>Free shipping with 4 days delivery</li>
-                        </ul>
-                        <a data-action="ADD_TO_CART_IN_MODAL" class="add-cart add-cart-modal" href="#"><i
-                                class="fas fa-shopping-cart"></i>Add Cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        </section>
+
+
+
+
     <!-- Facility -->
     <section class="facility section" id="facility">
         <div class="facility-contianer container">
@@ -654,6 +376,8 @@
     </footer>
     <!-- End Footer -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <script src="./slider.js"></script>
     <script src="./index.js"></script>
 </body>
 
