@@ -227,19 +227,3 @@ border-right: none;
     transition: 0.3s all;
 }
 }
-
-.fade-create-account, .fade-already-created , .fade-logged-in, .fade-wrong-email-password{
-  font-size: 20px;
-  color: white;
-  background-color: rgb(77, 75, 75);
-  width: 250px;
-  text-align: center;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 120px;
-  z-index: 1000;
-  opacity: 0;
-  border-radius: 13px;
-
-}
