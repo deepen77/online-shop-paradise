@@ -1,0 +1,48 @@
+.about {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 250px;
+}
+
+.about-content {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content-square  {
+    flex-basis: 50%;
+    
+}
+
+.about-content-square h2 {
+    font-size: 4rem;
+    border-bottom: 1px solid black;
+}
+
+
+.about-content-square h1,
+.about-content-square h2,
+.about-content-square p {
+width: 400px;
+padding: 1rem;
+margin: 0 auto;
+   
+}
+
+.about-content-square img  {
+    width: 100%;
+    }
+
+@media (max-width: 960px) {
+.about {
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+  .about-content {
+  flex-direction: column;
+}
+}
