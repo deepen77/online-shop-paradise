@@ -164,6 +164,7 @@ function getFieldName(input) {
 }
 
 // Event listeners
+if(form) {
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   checkRequired([email, password, password2]);
@@ -171,5 +172,5 @@ form.addEventListener("submit", function (e) {
   checkEmail(email);
   checkPasswordsMatch(password, password2); 
 });
-
+}
 
