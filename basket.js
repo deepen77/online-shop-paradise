@@ -94,7 +94,6 @@ btnInModal.forEach((btnInModal) => {
   btnInModal.addEventListener("click", (e) => {
     const productModalDOM =
       btnInModal.parentNode.parentNode.parentNode.parentNode;
-    console.log(productModalDOM);
 
     product = {
       id: productModalDOM.querySelector(".product-id").innerText,

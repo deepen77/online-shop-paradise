@@ -255,7 +255,7 @@ nav-two ul li:hover {
   nav-two ul {
     flex-direction: column;
     background-color: #3f3e3e;
-    padding-top: 80px;
+    padding: 80px;
   }
 
   nav-two ul li a {

@@ -47,46 +47,44 @@ const mapLondon = document.getElementById("london");
 const mapNewyork = document.getElementById("newyork");
 const mapParis = document.getElementById("paris");
 
-if(btnLondon) {
-btnLondon.addEventListener("click", () => {
-  mapLondon.style.transition = "2s";
-  btnNewyork.classList.remove("btn-active");
-  btnLondon.classList.add("btn-active");
-  btnParis.classList.remove("btn-active");
-  mapNewyork.style.display = "none";
-  mapLondon.style.display = "flex";
-  mapParis.style.display = "none";
-});
+if (btnLondon) {
+  btnLondon.addEventListener("click", () => {
+    mapLondon.style.transition = "2s";
+    btnNewyork.classList.remove("btn-active");
+    btnLondon.classList.add("btn-active");
+    btnParis.classList.remove("btn-active");
+    mapNewyork.style.display = "none";
+    mapLondon.style.display = "flex";
+    mapParis.style.display = "none";
+  });
 }
 
-if(btnNewyork) {
-btnNewyork.addEventListener("click", () => {
-  mapNewyork.style.transition = "2s";
-  btnNewyork.classList.add("btn-active");
-  btnLondon.classList.remove("btn-active");
-  btnParis.classList.remove("btn-active");
-  mapNewyork.style.display = "flex";
-  mapLondon.style.display = "none";
-  mapParis.style.display = "none";
-});
+if (btnNewyork) {
+  btnNewyork.addEventListener("click", () => {
+    mapNewyork.style.transition = "2s";
+    btnNewyork.classList.add("btn-active");
+    btnLondon.classList.remove("btn-active");
+    btnParis.classList.remove("btn-active");
+    mapNewyork.style.display = "flex";
+    mapLondon.style.display = "none";
+    mapParis.style.display = "none";
+  });
 }
 
-if(btnParis) {
-btnParis.addEventListener("click", () => {
-  mapParis.style.transition = "2s";
-  btnNewyork.classList.remove("btn-active");
-  btnLondon.classList.remove("btn-active");
-  btnParis.classList.add("btn-active");
-  mapNewyork.style.display = "none";
-  mapLondon.style.display = "none";
-  mapParis.style.display = "flex";
-  mapParis.style.transition = "2s";
-});
+if (btnParis) {
+  btnParis.addEventListener("click", () => {
+    mapParis.style.transition = "2s";
+    btnNewyork.classList.remove("btn-active");
+    btnLondon.classList.remove("btn-active");
+    btnParis.classList.add("btn-active");
+    mapNewyork.style.display = "none";
+    mapLondon.style.display = "none";
+    mapParis.style.display = "flex";
+    mapParis.style.transition = "2s";
+  });
 }
-
 
 /*Branches*/
-
 
 /*Form validation*/
 const form = document.getElementById("form");
@@ -97,7 +95,6 @@ const password2 = document.getElementById("repeat");
 const formLogin = document.getElementById("formLogin");
 const emailLogin = document.getElementById("emailLogin");
 const passwordLogin = document.getElementById("passwordLogin");
-
 
 // Show input error message
 function showError(input, message) {
@@ -115,7 +112,8 @@ function showSuccess(input) {
 
 // Check email is valid
 function checkEmail(input) {
-  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const re =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (re.test(input.value.trim())) {
     showSuccess(input);
   } else {
@@ -164,13 +162,90 @@ function getFieldName(input) {
 }
 
 // Event listeners
-if(form) {
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  checkRequired([email, password, password2]);
-  checkLength(password, 6, 25);
-  checkEmail(email);
-  checkPasswordsMatch(password, password2); 
-});
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    checkRequired([email, password, password2]);
+    checkLength(password, 6, 25);
+    checkEmail(email);
+    checkPasswordsMatch(password, password2);
+  });
 }
 
+/*Search function*/
+
+const searchButton = document.querySelector(".fa-search");
+const searchInput = document.querySelector(".search");
+const productName = document.querySelectorAll(".product-name");
+const inputMobileSearchfield = document.querySelector(".search-mobile-input");
+const searchInputButtonMobile = document.querySelector(
+  ".btn-search-input-mobile"
+);
+const searchMobileInput = document.querySelector(".search-mobile-div-input");
+const searchMobileButton = document.querySelector(".search-mobile");
+
+searchMobileButton.addEventListener("click", () => {
+  if (searchMobileInput.style.display == "") {
+    searchMobileInput.style.display = "flex";
+  } else {
+    searchMobileInput.style.display = "";
+  }
+});
+
+searchButton.addEventListener("click", () => {
+  let resultSearch = searchInput.value.toLowerCase();
+  localStorage.setItem("search", JSON.stringify(resultSearch));
+  reDirection();
+});
+
+
+searchInput.addEventListener("keypress", (e) => {
+  if (e.keyCode === 13) {
+  let resultSearch = searchInput.value.toLowerCase();
+  localStorage.setItem("search", JSON.stringify(resultSearch));
+  reDirection();
+  }
+});
+
+
+searchInputButtonMobile.addEventListener("click", () => {
+  let resultSearch = inputMobileSearchfield.value.toLowerCase();
+  localStorage.setItem("search", JSON.stringify(resultSearch));
+  reDirection();
+});
+
+inputMobileSearchfield.addEventListener("keypress", (e) => {
+  if (e.keyCode === 13) {
+    let resultSearch = inputMobileSearchfield.value.toLowerCase();
+    localStorage.setItem("search", JSON.stringify(resultSearch));
+    reDirection();
+  }
+});
+
+
+resultSearch = JSON.parse(localStorage.getItem("search"));
+
+if (resultSearch) {
+  productName.forEach(function (product) {
+    let whichOne = product.parentElement.parentElement;
+    text = product.innerText.toLowerCase();
+    if (text.match(resultSearch)) {
+      whichOne.style.display = "block";
+    } else {
+      whichOne.style.display = "none";
+    }
+    clearCart();
+  });
+}
+
+function clearCart() {
+  localStorage.removeItem("search");
+}
+
+function reDirection() {
+  if (location.pathname == "/index.html") {
+    window.location = "pages/products.html";
+  } else {
+    window.location = "products.html";
+  }
+}

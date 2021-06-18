@@ -11,7 +11,8 @@
 
 .banner img {
   position: absolute;
-  bottom: 0;
+  /* bottom: 0; */
+  top: 45%;
   left: 50%;
   transform: translateX(-50%);
   width: 60rem;
@@ -32,7 +33,7 @@
 }
 
 .banner-content h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
@@ -46,8 +47,8 @@
 .button-container a {
   display: inline-block;
   border: 1px solid #222;
-  background: #222;
-  color: #fff;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   outline: none;
   padding: 1.2rem 3rem;
   font-size: 1.6rem;
@@ -108,12 +109,14 @@
   .banner-content {
     width: 60%;
     position: absolute;
-    top: 30%;
+    top: 200px;
     left: 50%;
     transform: translate(-50%, -50%);
+    
   }
   .banner img {
-  width: 50rem;
+  bottom: 0;
+  width: 40rem;
 }
 
 .glide:hover .glide__arrow {
@@ -128,9 +131,7 @@
 }
 
 @media only screen and (max-width: 568px) {
- .banner-content {
-    top: 45%;
-  }
+ 
 
   .banner-content h1 {
     font-size: 2rem;
@@ -146,8 +147,8 @@
   margin-bottom: 1rem;
 }
  .banner img {
-  /* width: 13rem; */
-  top:30rem;
+  width: 20rem;
+  top:25rem;
 }
 }
 
@@ -229,6 +230,9 @@ span.dot::before {
 }
 
 @media only screen and (max-width: 567px) {
+  .section {
+  padding: 2rem 0;
+}
   .title-container {
     flex-direction: column;
   }
@@ -320,8 +324,14 @@ span.dot::before {
 }
 
 @media only screen and (max-width: 567px) {
+.blog-container.container {
+  width: 100%;
+  padding: 1rem;
+}
+
   .blog-card {
     width: 100%;
+    
   }
   .card-footer h3 {
     font-size: 1.8rem;
