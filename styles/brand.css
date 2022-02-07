@@ -4,13 +4,12 @@
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
- padding-top: 150px;
+ padding-top: 250px;
 }
 
 .brand img {
   width: 100%;
   margin-bottom: 15px;
-  filter: grayscale(30%);
 }
 
 .brand-column-one, .brand-column-two {
@@ -29,7 +28,7 @@
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 15px;
-  color: #575153
+  color: #000000
 }
 
 
@@ -37,7 +36,7 @@
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 15px;
-  color: #575153;
+  color: #000000;
 }
 
 .brand-column-two h3 {
